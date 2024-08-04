@@ -1,5 +1,4 @@
 Setup Instructions:
-
 1. Create an account at https://platform.openai.com/signup/
 2. Navigate to https://platform.openai.com/api-keys and create a new secret key with the following settings:
    - Owned by: You
@@ -9,17 +8,24 @@ Setup Instructions:
 3. Copy the generated API key.
 
 Best practices for storing your API key:
-   - For long-term projects, it's recommended to use a secrets manager like AWS Secrets Manager, Google Cloud Secret Manager, or HashiCorp Vault.
-   - For simplicity, you can create a file named ".env" in your project directory with the following content:
-       OPENAI_API_KEY=your_api_key_here
-   - Make sure to add the ".env" file to your ".gitignore" file to avoid exposing your API key in version control.
+   - For long-term projects, use a secrets manager like AWS Secrets Manager, Google Cloud Secret Manager, or HashiCorp Vault.
+   - For simplicity, create a file named ".env" in your project directory with the content:
+     OPENAI_API_KEY=your_api_key_here
+   - Add the ".env" file to your ".gitignore" to avoid exposing your API key in version control.
 
-4. Test the API key by running the provided test script using:
+4. Replace 'YOUR_API_KEY_HERE' in the text_extraction_script.py with your actual OpenAI API key or set it as the environment variable OPENAI_API_KEY.
+
+5. Test the API key by running:
    bash Scripts/test_api_key.sh
-   This will ensure the API key is valid and list available engines.
 
-5. Replace 'YOUR_API_KEY_HERE' in the text_extraction_script.py with your actual OpenAI API key or set it as the environment variable OPENAI_API_KEY.
-6. Install the required Python packages by running:
+6. Ensure ability to make API calls:
+a. Go to https://platform.openai.com/account/billing/overview
+b. Confirm you have a valid payment method and no overdue balances
+c. Run the test script:
+   bash Scripts/test_api_call.sh
+
+7. Install required Python packages:
    pip install openai PyPDF2
-7. Specify the path to the PDF file in the script and run it using:
+
+8. Specify the PDF file path in the script and run:
    python Scripts/text_extraction_script.py
