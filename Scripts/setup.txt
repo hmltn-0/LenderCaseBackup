@@ -1,9 +1,9 @@
 Setup Instructions:
 
-1. Create an account at the Language Model API provider's website.
-2. Enable the API access and obtain an API token.
-3. Replace 'YOUR_API_TOKEN_HERE' in the text_extraction_script.py with your actual API token.
-4. Ensure you have the required Python package installed by running:
-   pip install requests
+1. Create an account at https://beta.openai.com/signup/
+2. Generate your API key from https://beta.openai.com/account/api-keys
+3. Replace 'YOUR_API_KEY_HERE' in the text_extraction_script.py with your actual OpenAI API key or set the environment variable OPENAI_API_KEY.
+4. Install the required Python packages by running:
+   pip install openai PyPDF2
 5. Specify the path to the PDF file in the script and run it using:
    python Scripts/text_extraction_script.py
