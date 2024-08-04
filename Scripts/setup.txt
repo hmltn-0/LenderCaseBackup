@@ -10,9 +10,9 @@ Setup Instructions:
 
 Best practices for storing your API key:
    - For long-term projects, it's recommended to use a secrets manager like AWS Secrets Manager, Google Cloud Secret Manager, or HashiCorp Vault.
-   - For simplicity, you can create a  file in your project directory with the following content:
+   - For simplicity, you can create a file named ".env" in your project directory with the following content:
        OPENAI_API_KEY=your_api_key_here
-   - Make sure to add the  file to your  to avoid exposing your API key in version control.
+   - Make sure to add the ".env" file to your ".gitignore" file to avoid exposing your API key in version control.
 
 4. Replace 'YOUR_API_KEY_HERE' in the text_extraction_script.py with your actual OpenAI API key or set it as the environment variable OPENAI_API_KEY.
 5. Install the required Python packages by running:
