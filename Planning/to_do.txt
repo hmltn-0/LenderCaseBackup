@@ -1,1 +1,6 @@
 TODO: List tasks here
+
+- Extract the text faithfully from the PDF.
+  * The PDF is a collection of scanned images.
+  * The scans are not OCRed.
+  * We need a high-quality LLM to read it accurately since the scans have subtle irregularities and are not perfect screenshots of computer fonts.
