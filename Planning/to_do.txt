@@ -1,6 +1,6 @@
 TODO: List tasks here
 
-- Extract the text faithfully from the PDF.
-  * The PDF is a collection of scanned images.
-  * The scans are not OCRed.
-  * We need a high-quality LLM to read it accurately since the scans have subtle irregularities and are not perfect screenshots of computer fonts.
+- Accurate Text Extraction from Scanned PDF:
+  * The provided PDF consists of scanned images.
+  * These scans have not undergone OCR processing.
+  * Utilize a top-tier LLM to ensure precise text extraction, accounting for subtle irregularities in the scans, as they are not flawless representations of computer-generated fonts.
