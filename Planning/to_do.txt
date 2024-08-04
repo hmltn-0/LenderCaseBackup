@@ -1,6 +1,6 @@
-TODO: List tasks here
+TODO:
 
-- Accurate Text Extraction from Scanned PDF:
-  * The provided PDF consists of scanned images.
-  * These scans have not undergone OCR processing.
-  * Utilize a top-tier LLM to ensure precise text extraction, accounting for subtle irregularities in the scans, as they are not flawless representations of computer-generated fonts.
+- Objective: Extract text from vehicle contract scans
+  * The contract is provided as a PDF containing scanned image files.
+  * These images lack prior OCR processing.
+  * Implement a high-quality language model to accurately extract text, compensating for any potential irregularities in the scanned documents.
