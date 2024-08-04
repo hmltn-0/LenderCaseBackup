@@ -15,7 +15,7 @@ Best practices for storing your API key:
    - Make sure to add the ".env" file to your ".gitignore" file to avoid exposing your API key in version control.
 
 4. Test the API key by running the provided test script using:
-   python Scripts/test_api_key.py
+   bash Scripts/test_api_key.sh
    This will ensure the API key is valid and list available engines.
 
 5. Replace 'YOUR_API_KEY_HERE' in the text_extraction_script.py with your actual OpenAI API key or set it as the environment variable OPENAI_API_KEY.
