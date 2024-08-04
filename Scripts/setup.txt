@@ -1,9 +1,14 @@
 Setup Instructions:
 
 1. Create an account at https://platform.openai.com/signup/
-2. Generate your API key from https://platform.openai.com/account/api-keys
-3. Replace 'YOUR_API_KEY_HERE' in the text_extraction_script.py with your actual OpenAI API key or set it as the environment variable OPENAI_API_KEY.
-4. Install the required Python packages by running:
+2. Navigate to https://platform.openai.com/api-keys and create a new secret key with the following settings:
+   - Owned by: You
+   - Name: Optional (you can leave this blank or give it a descriptive name)
+   - Project: Default project
+   - Permissions: Choose 'All' to allow full access
+3. Copy the generated API key.
+4. Replace 'YOUR_API_KEY_HERE' in the text_extraction_script.py with your actual OpenAI API key or set it as the environment variable OPENAI_API_KEY.
+5. Install the required Python packages by running:
    pip install openai PyPDF2
-5. Specify the path to the PDF file in the script and run it using:
+6. Specify the path to the PDF file in the script and run it using:
    python Scripts/text_extraction_script.py
